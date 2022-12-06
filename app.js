@@ -30,6 +30,11 @@ const app = vue.createApp({
         handleMouseMove(e) {
             this.x = this.offsetX
             this.y = this.offsetY
+        },
+        computed: {
+            filteredBooks() {
+                return this.books.filter((books) => book.isFav)
+            }
         }
     }
     // template: '<h2>This is my template</h2>'
