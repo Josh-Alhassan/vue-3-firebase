@@ -7,6 +7,8 @@ const app = vue.createApp({
             title: 'The final empire',
             author: 'Joshua Abel',
             age: 45,
+            x: 0,
+            y:0
         }
     },
     methods: {
@@ -15,6 +17,16 @@ const app = vue.createApp({
         },
         toggleShowBooks() {
             this.showBooks = !this.showBooks
+        },
+        handleEvent(e, data) {
+            console.log(e, e.type)
+            if (data) {
+                console.log(data)
+            }
+        },
+        handleMouseMove(e) {
+            this.x = this.offsetX
+            this.y = this.offsetY
         }
     }
     // template: '<h2>This is my template</h2>'
