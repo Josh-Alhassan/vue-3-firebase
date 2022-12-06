@@ -7,6 +7,11 @@ const app = vue.createApp({
             author: 'Joshua Abel',
             age: 45,
         }
+    },
+    methods: {
+        changeTitle(title) {
+            this.title = title
+        }
     }
     // template: '<h2>This is my template</h2>'
 })
