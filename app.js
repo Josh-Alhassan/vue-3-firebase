@@ -4,11 +4,11 @@ const app = vue.createApp({
     data() {
         return {
             showBooks: true,
-            title: 'The final empire',
-            author: 'Joshua Abel',
-            age: 45,
-            x: 0,
-            y:0
+            books: [
+                {title:'name of the wind', author: 'Patrick rothfuss'},
+                {title: 'The way of kings', author: 'Brandon Sanderson'},
+                {title: 'The final empire', author: 'Brandon Sanderson'}
+            ]
         }
     },
     methods: {
